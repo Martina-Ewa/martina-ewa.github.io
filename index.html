@@ -1,22 +1,26 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website</title>
+    <title>Martina's Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px 0; /* Adjust top and bottom margin */
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
         }
 
         #container {
             display: flex;
-            flex-direction: column;
             align-items: center;
-            text-align: center;
-            margin-left: 20px; /* Adjust left margin */
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 250px;
+            background-color: #f0f0f0;
         }
 
         #image {
@@ -25,23 +29,37 @@
         }
 
         #text {
-            max-width: 600px;
+            max-width: 200px;
+            margin: 0 auto;
+            text-align: center;
+            color: #333; /* Darken text color */
+        }
+
+        #right-content {
+            margin-left: 250px;
+            padding: 20px;
         }
     </style>
 </head>
 <body>
     <div id="container">
-        <img id="image" src="https://raw.githubusercontent.com/martina-ewa/your-repo/main/jpgsnowboardingup.jpg">
+        <img id="image" src="https://raw.githubusercontent.com/martina-ewa/your-repo/main/jpgsnowboardingup.jpg" alt="Martina's Image">
         <div id="text">
-            <h2>Martina Wojciechowska</h2>
-            <p>Hi! My name is Martina, I am a 3rd year student at the University Of British Columbia. I am studying Mathematics
-              and my main areas of intests are Probability, Statistics, Number Theory, and Analysis. I am originally from Poland where
-              I graduated high school and where I discovered my love for Math. After I moved to North America, I gradually developed big passion for Computer Science, 
-              especially Data Science!</p>
+            <h2>Martina</h2>
+            <p>
+                I am a 3rd year student at the University Of British Columbia. I am studying Mathematics and my main areas of interest are Probability, Statistics, Number Theory, and Analysis. I am originally from Poland where I graduated high school and discovered my love for Math. After I moved to North America, I gradually developed a big passion for Computer Science, especially Data Science.
+            </p>
         </div>
+    </div>
+
+    <div id="right-content">
+        <!-- Add your portfolio projects or other content on the right side -->
+        <h2>Portfolio Projects</h2>
+        <p>Your portfolio content goes here...</p>
     </div>
 </body>
 </html>
+
 
 
 
