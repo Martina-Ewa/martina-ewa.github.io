@@ -14,13 +14,13 @@
 
         #container {
             display: flex;
-            align-items: center;
             position: fixed;
             top: 0;
             left: 0;
             height: 100vh;
             width: 250px;
             background-color: #f0f0f0;
+            overflow-y: auto; /* Allow vertical scrolling for the left side */
         }
 
         #image {
@@ -32,7 +32,7 @@
             max-width: 200px;
             margin: 0 auto;
             text-align: center;
-            color: #333; /* Darken text color */
+            color: #333;
         }
 
         #right-content {
@@ -47,19 +47,14 @@
         <div id="text">
             <h2>Martina</h2>
             <p>
-                I am a 3rd year student at the University Of British Columbia. I am studying Mathematics and my main areas of interest are Probability, Statistics, Number Theory, and Analysis. I am originally from Poland where I graduated high school and discovered my love for Math. After I moved to North America, I gradually developed a big passion for Computer Science, especially Data Science.
+                I am a 3rd year student. I am studying Mathematics and my main areas of interest are Probability, Statistics, Number Theory, and Analysis. I am originally from Poland where I graduated high school and discovered my love for Math. After I moved to North America, I gradually developed a big passion for Computer Science, especially Data Science.
             </p>
         </div>
     </div>
 
     <div id="right-content">
-        <!-- Add your portfolio projects or other content on the right side -->
         <h2>Portfolio Projects</h2>
         <p>Your portfolio content goes here...</p>
     </div>
 </body>
 </html>
-
-
-
-
