@@ -15,7 +15,6 @@
             height: 100vh;
             width: 500px;
             background-color: #fff;
-            overflow-y: auto;
         }
 
         #container4 {
@@ -52,13 +51,12 @@
         }
         
         
-        #image-container {
-        display: flex;
-        justify-content: flex-end;
-        margin-top: 200px; 
-        
-
-         }
+         #image-container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start; /* Adjusted to move the image to the right */
+            margin-top: 200px;
+        }
 
         #container2 {
             display: flex;
@@ -92,15 +90,24 @@
             background-color: #fff;
             font-family: 'Roboto', sans-serif;
         }
+        
     </style>
     
 </head>
 
 <body>
+                           
+ <div id="container5">
+    <img id="image" src="Picture.jpg">
+
+          <p> </p>
+     </div>
 
         <div id="container">
+
             <div id="text">
                 <h2>Martina Wojciechowska</h2>
+
                 <p>
                     I am a third-year Mathematics student at the University Of British Columbia in Vancouver. 
                     My main areas of interest are Probability, Statistics, Number Theory, and Analysis.
@@ -129,8 +136,8 @@
        
         </div>
         
-        <div class="container5">
-        <img id="image" src="Picture.jpg">
+        
+    
         
          </div>
 
