@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Martina's Portfolio</title>
     <style>
         body {
@@ -13,34 +12,45 @@
             margin: 0;
             padding: 0;
             display: flex;
-            flex-direction: column;
-            align-items: center;
             background-color: #f4f4f4;
+        }
+
+        #left-column {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 100vh;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            overflow: auto;
         }
 
         #profile {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            margin: 20px;
         }
 
         #image {
             max-width: 150px;
-            margin-right: 20px;
+            margin-bottom: 20px;
         }
 
         #text {
-            max-width: 600px;
+            text-align: left;
         }
 
         h2 {
             margin: 0 0 10px 0;
         }
 
-        #projects {
-            width: 100%;
-            max-width: 900px;
-            margin: 20px;
+        #right-column {
+            margin-left: 270px; /* Add some space for the fixed left column */
+            padding: 20px;
+            width: calc(100% - 270px);
+            box-sizing: border-box;
         }
 
         .project {
@@ -53,32 +63,43 @@
         .project h2 {
             margin-top: 0;
         }
+
+        a {
+            color: #0073b1;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
 <body>
-    <div id="profile">
-        <img id="image" src="Picture.jpg" alt="Martina's Picture">
-        <div id="text">
-            <h2>Martina Wojciechowska</h2>
-            <p>
-                I am a third-year Mathematics student at the University Of British Columbia in Vancouver. 
-                My main areas of interest are Probability, Statistics, Number Theory, and Analysis.
-            </p>
-            <p>
-                Originally I am from a small town in southern Poland where I graduated high school and where I developed my love for Math. After I moved to Canada, my interest expanded to Computer Science, and I am now cultivating my passion in Data Science.
-                In future pursuits, I am interested in the intersection of mathematical theory and practical applications.
-            </p>
-            <p>
-                Outside of the world of numbers, I am a member of the Boxing Club at UBC, I love traveling (Amsterdam, I see you!) and lately, I have grown a passion and appreciation for wines.
-            </p>
-            <p>
-                LinkedIn Profile <a href="https://www.linkedin.com/in/martina-ewa/">Here</a>.
-            </p>
+    <div id="left-column">
+        <div id="profile">
+            <img id="image" src="Picture.jpg" alt="Martina's Picture">
+            <div id="text">
+                <h2>Martina Wojciechowska</h2>
+                <p>
+                    I am a third-year Mathematics student at the University Of British Columbia in Vancouver. 
+                    My main areas of interest are Probability, Statistics, Number Theory, and Analysis.
+                </p>
+                <p>
+                    Originally I am from a small town in southern Poland where I graduated high school and where I developed my love for Math. After I moved to Canada, my interest expanded to Computer Science, and I am now cultivating my passion in Data Science.
+                    In future pursuits, I am interested in the intersection of mathematical theory and practical applications.
+                </p>
+                <p>
+                    Outside of the world of numbers, I am a member of the Boxing Club at UBC, I love traveling (Amsterdam, I see you!) and lately, I have grown a passion and appreciation for wines.
+                </p>
+                <p>
+                    LinkedIn Profile <a href="https://www.linkedin.com/in/martina-ewa/">Here</a>.
+                </p>
+            </div>
         </div>
     </div>
 
-    <div id="projects">
+    <div id="right-column">
         <h2>Portfolio Projects</h2>
 
         <div class="project">
