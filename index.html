@@ -7,93 +7,58 @@
     
     <title>Martina's Portfolio</title>
     <style>
-        #container {
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
             display: flex;
-            position: fixed;
-            top: 350px;
-            left: 100px;
-            height: 100vh;
-            width: 500px;
-            background-color: #fff;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f4;
         }
 
-        #container4 {
+        #profile {
             display: flex;
-            position: fixed;
-            top: 600px;
-            left: 100px;
-            height: 100vh;
-            width: 400px;
-            background-color: #fff;
+            align-items: center;
+            margin: 20px;
         }
 
         #image {
-            max-width: 17%;
-            max-height: 17%;
+            max-width: 150px;
+            margin-right: 20px;
         }
 
         #text {
             max-width: 600px;
-            margin: 0 auto;
-            text-align: left;
-            color: #333;
-            margin-left: 20px;
-            font-family: 'Roboto', sans-serif;
-            font-size: 13px;
         }
 
-        #right-content {
+        h2 {
+            margin: 0 0 10px 0;
+        }
+
+        #projects {
+            width: 100%;
+            max-width: 900px;
+            margin: 20px;
+        }
+
+        .project {
+            background-color: #fff;
             padding: 20px;
-            margin-left: 850px;
-            top: 80px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
 
-        #image-container {
-            display: flex;
-            justify-content: flex-end;
-            align-items: flex-start; /* Adjusted to move the image to the right */
-            margin-top: 200px;
-        }
-
-        #container2, #container3, #container4 {
-            display: flex;
-            position: fixed;
-            left: 750px;
-            height: 100vh;
-            width: 500px;
-            background-color: #fff;
-            font-family: 'Roboto', sans-serif;
-        }
-
-        #container2 {
-            top: 120px;
-        }
-
-        #container3 {
-            top: 400px;
-        }
-
-        #container4 {
-            top: 680px; /* Adjusted to avoid overlap */
-        }
-
-        #container5 {
-            display: flex;
-            position: fixed;
-            top: 80px;
-            left: 250px;
-            background-color: #fff;
-            font-family: 'Roboto', sans-serif;
+        .project h2 {
+            margin-top: 0;
         }
     </style>
 </head>
 
 <body>
-    <div id="container5">
-        <img id="image" src="Picture.jpg">
-    </div>
-
-    <div id="container">
+    <div id="profile">
+        <img id="image" src="Picture.jpg" alt="Martina's Picture">
         <div id="text">
             <h2>Martina Wojciechowska</h2>
             <p>
@@ -101,13 +66,11 @@
                 My main areas of interest are Probability, Statistics, Number Theory, and Analysis.
             </p>
             <p>
-                Originally I am from a small town in southern Poland
-                where I graduated high school and where I developed my love for Math. After I moved to
-                Canada, my interest expanded to Computer Science, and I am now cultivating my passion in Data Science.
-                In the future pursuits, I am interested in intersection of mathematical theory and practical applications.
+                Originally I am from a small town in southern Poland where I graduated high school and where I developed my love for Math. After I moved to Canada, my interest expanded to Computer Science, and I am now cultivating my passion in Data Science.
+                In future pursuits, I am interested in the intersection of mathematical theory and practical applications.
             </p>
             <p>
-                Outside of the world of numbers, I am a member of the Boxing Club at UBC, I love travelling (Amsterdam, I see you!) and lately I have grown a passion and appreciation for wines.
+                Outside of the world of numbers, I am a member of the Boxing Club at UBC, I love traveling (Amsterdam, I see you!) and lately, I have grown a passion and appreciation for wines.
             </p>
             <p>
                 LinkedIn Profile <a href="https://www.linkedin.com/in/martina-ewa/">Here</a>.
@@ -115,12 +78,10 @@
         </div>
     </div>
 
-    <div id="right-content">
+    <div id="projects">
         <h2>Portfolio Projects</h2>
-    </div>
 
-    <div id="container2">
-        <div id="text">
+        <div class="project">
             <h2>Analysis and Clustering of Spanish Wines</h2>
             <p>
                 A beautiful country located on the Iberian Peninsula- Spain is worldly known for its wineries and excellent wines. 
@@ -133,14 +94,11 @@
                 Review the code on GitHub <a href="https://github.com/Martina-Ewa/Project1_Wines">Here</a>.
             </p>
         </div>
-    </div>
 
-    <div id="container3">
-        <div id="text">
+        <div class="project">
             <h2>Swinging Success: Unveiling Tennis Players Careers with Machine Learning</h2>
             <p>
-                Tennis is one of the most prestigious and popular sports out there, usually with big prizes involved for top world players. I worked with a dataset to visualize, 
-                understand and predict a potential success of a player. 
+                Tennis is one of the most prestigious and popular sports out there, usually with big prizes involved for top world players. I worked with a dataset to visualize, understand and predict a potential success of a player. 
             </p>
             <p>
                 Technology Used: Python, JupyterNotebook, K-Nearest Neighbors Model (KNN), Linear Regression, Altair, Scikit-learn
@@ -149,10 +107,8 @@
                 Review the code on GitHub <a href="https://github.com/Martina-Ewa/Project2_Tennis">Here</a>.
             </p>
         </div>
-    </div>
 
-    <div id="container4">
-        <div id="text">
+        <div class="project">
             <h2>Text Sentiment Analysis of Movie Reviews</h2>
             <p>
                 In this project, I performed sentiment analysis on movie reviews to classify them as positive or negative. I utilized natural language processing techniques and machine learning algorithms to build the model.
