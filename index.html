@@ -29,10 +29,8 @@
 
         #image {
             max-width: 17%;
-            max-height: 17%
+            max-height: 17%;
         }
-        
-       
 
         #text {
             max-width: 600px;
@@ -49,19 +47,17 @@
             margin-left: 850px;
             top: 80px;
         }
-        
-        
-         #image-container {
+
+        #image-container {
             display: flex;
             justify-content: flex-end;
             align-items: flex-start; /* Adjusted to move the image to the right */
             margin-top: 200px;
         }
 
-        #container2 {
+        #container2, #container3, #container4 {
             display: flex;
             position: fixed;
-            top: 120px;
             left: 750px;
             height: 100vh;
             width: 500px;
@@ -69,15 +65,16 @@
             font-family: 'Roboto', sans-serif;
         }
 
+        #container2 {
+            top: 120px;
+        }
+
         #container3 {
-            display: flex;
-            position: fixed;
             top: 400px;
-            left: 750px;
-            height: 100vh;
-            width: 500px;
-            background-color: #fff;
-            font-family: 'Roboto', sans-serif;
+        }
+
+        #container4 {
+            top: 680px; /* Adjusted to avoid overlap */
         }
 
         #container5 {
@@ -85,104 +82,89 @@
             position: fixed;
             top: 80px;
             left: 250px;
-            
             background-color: #fff;
             font-family: 'Roboto', sans-serif;
         }
-        
-        
-        
     </style>
-    
 </head>
 
 <body>
-                           
- <div id="container5">
-    <img id="image" src="Picture.jpg">
+    <div id="container5">
+        <img id="image" src="Picture.jpg">
+    </div>
 
-          <p> </p>
-     </div>
-
-        <div id="container">
-
-            <div id="text">
-                <h2>Martina Wojciechowska</h2>
-
-                <p>
-                    I am a third-year Mathematics student at the University Of British Columbia in Vancouver. 
-                    My main areas of interest are Probability, Statistics, Number Theory, and Analysis.
-                    <p>
-                        
-                </p>
-                 <p>
-                    Originally I am from a small town in southern Poland
-                    where I graduated high school and where I developed my love for Math. After I moved to
-                    Canada, my interest expanded to Computer Science, and I am now cultivating my passion in Data Science.
-                    In the future pursuits, I am interested in intersection of mathematical theory and practical applications.
-                
-
-
-                </p>
-                
-                <p>
-                   Outside of the world of numbers, I am a member of the Boxing Club at UBC, I love travelling (Amsterdam, I see you!) and lately I have grown a passion and appreciation for wines.
-                </p>
-                
-                <p>
-                 Linkedin Profile <a href="https://www.linkedin.com/in/martina-ewa/">Here</a>.
-                </p>
-                
-            </div>
+    <div id="container">
+        <div id="text">
+            <h2>Martina Wojciechowska</h2>
+            <p>
+                I am a third-year Mathematics student at the University Of British Columbia in Vancouver. 
+                My main areas of interest are Probability, Statistics, Number Theory, and Analysis.
+            </p>
+            <p>
+                Originally I am from a small town in southern Poland
+                where I graduated high school and where I developed my love for Math. After I moved to
+                Canada, my interest expanded to Computer Science, and I am now cultivating my passion in Data Science.
+                In the future pursuits, I am interested in intersection of mathematical theory and practical applications.
+            </p>
+            <p>
+                Outside of the world of numbers, I am a member of the Boxing Club at UBC, I love travelling (Amsterdam, I see you!) and lately I have grown a passion and appreciation for wines.
+            </p>
+            <p>
+                LinkedIn Profile <a href="https://www.linkedin.com/in/martina-ewa/">Here</a>.
+            </p>
         </div>
+    </div>
 
-       
+    <div id="right-content">
+        <h2>Portfolio Projects</h2>
+    </div>
 
-        
-        
-    
-
-        <div id="right-content">
-            <h2>Portfolio Projects
-            </h2>
-            <p> </p>
+    <div id="container2">
+        <div id="text">
+            <h2>Analysis and Clustering of Spanish Wines</h2>
+            <p>
+                A beautiful country located on the Iberian Peninsula- Spain is worldly known for its wineries and excellent wines. 
+                In this project, I applied Data Analysis, visualizations tools, and a Clustering Model to better understand the wine story that began thousands of years ago. 
+            </p>
+            <p>
+                Technology Used: Python, JupyterNotebook, Seaborn and Matplotlib, KMeans, Scikit-learn
+            </p>
+            <p>
+                Review the code on GitHub <a href="https://github.com/Martina-Ewa/Project1_Wines">Here</a>.
+            </p>
         </div>
+    </div>
 
-        <div id="container2">
-            <div id="text">
-                <h2>Analysis and Clustering of Spanish Wines</h2>
-                <p>
-                   A beautiful country located on the Iberian Peninsula- Spain is worldly known for its wineries and excellent wines. 
-                    In this project, I applied Data Analysis, visualizations tools, and a Clustering Model to better understand the wine story that began thousands of years
-                    ago. 
-                </p>
-                
-                <p>
-                Technology Used: Python, JupyterNotebook, Seaborn and Matplotlib, KMeans, Scikit-learn                
-                </p>
-                <p>
-                 Review the code on GitHub <a href="https://github.com/Martina-Ewa/Project1_Wines">Here</a>.
-                </p>
-            </div>
+    <div id="container3">
+        <div id="text">
+            <h2>Swinging Success: Unveiling Tennis Players Careers with Machine Learning</h2>
+            <p>
+                Tennis is one of the most prestigious and popular sports out there, usually with big prizes involved for top world players. I worked with a dataset to visualize, 
+                understand and predict a potential success of a player. 
+            </p>
+            <p>
+                Technology Used: Python, JupyterNotebook, K-Nearest Neighbors Model (KNN), Linear Regression, Altair, Scikit-learn
+            </p>
+            <p>
+                Review the code on GitHub <a href="https://github.com/Martina-Ewa/Project2_Tennis">Here</a>.
+            </p>
         </div>
+    </div>
 
-        <div id="container3">
-            <div id="text">
-                <h2>Swinging Success: Unveiling Tennis Players Careers with Machine Learning </h2>
-                <p> Tennis is one fo the most prestige and popular sports out there, usually with big prizes involved for top world players. I worked with a dataset to visualize, 
-                    understand and predict a potential success of a player. 
-                </p>
-                
-                <p>
-                Technology Used: Python, JupyterNotebook, K-Nearest Neighbors Model (KNN), Linear Regression, Altair, Scikit-learn                
-                </p>
-                 <p>
-                 Review the code on GitHub <a href="https://github.com/Martina-Ewa/Project2_Tennis">Here</a>.
-                 </p>
-            </div>
+    <div id="container4">
+        <div id="text">
+            <h2>Text Sentiment Analysis of Movie Reviews</h2>
+            <p>
+                In this project, I performed sentiment analysis on movie reviews to classify them as positive or negative. I utilized natural language processing techniques and machine learning algorithms to build the model.
+            </p>
+            <p>
+                Technology Used: Python, JupyterNotebook, NLTK, Scikit-learn, Pandas
+            </p>
+            <p>
+                Review the code on GitHub <a href="https://github.com/Martina-Ewa/Project3_MovieReviews">Here</a>.
+            </p>
         </div>
-
-
+    </div>
 </body>
 
 </html>
